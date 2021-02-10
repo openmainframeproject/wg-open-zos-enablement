@@ -79,87 +79,13 @@ most important cases:
 
 This then reduced the project dimensions to this table. This matrix
 could provide different ways of attacking the problem space.
-
-+----------+----------+----------+----------+----------+----------+
-| Co       | Env      | Emulated | Emulated | Z        | Z        |
-| mplexity | ironment | z        |          | Hardware | Hardware |
-|          | Use      | PDT/zD&T | z        | (either  | (either  |
-|          |          |          | PDT/zD&T | Bare     | Bare     |
-|          |          |          |          | Metal or | Metal or |
-|          |          |          |          | z/VM)    | z/VM)    |
-+==========+==========+==========+==========+==========+==========+
-|          |          | Donated  | Owned    | Donated  | Owned    |
-|          |          | or       |          | or       |          |
-|          |          | Shared   |          | Shared   |          |
-+----------+----------+----------+----------+----------+----------+
-| Simple   | Shared   | Perhaps  | 1        | 1 Marist | Company  |
-|          | sysprog  | z/OS on  | Perhaps  | College  | enables  |
-|          | support  | AWS with | z/OS on  | or VCU   | employee |
-|          | required | IBM ZD&T | AWS with | env      | experim  |
-|          | to       | Code as  | IBM ZD&T | ironment | entation |
-|          | e        | a        | Code as  | t        | using    |
-|          | stablish | template | a        | emplate, | company  |
-|          | the      |          | template | with     | r        |
-|          | user's   |          | (target  | donated  | esources |
-|          | z/OS     |          | audience | REXX     |          |
-|          | env      |          | MF       | from a   |          |
-|          | ironment |          | Novices) | company  |          |
-|          |          |          |          |          |          |
-|          | (For     |          |          |          |          |
-|          | example  |          |          |          |          |
-|          | simply   |          |          |          |          |
-|          | Unix     |          |          |          |          |
-|          | System   |          |          |          |          |
-|          | S        |          |          |          |          |
-|          | ervices) |          |          |          |          |
-+----------+----------+----------+----------+----------+----------+
-| Medium   | Sysprog  | Perhaps  | 2        | 2 Marist | Company  |
-|          | ac       | z/OS on  | Perhaps  | College  | enables  |
-|          | tivities | AWS with | z/OS on  | or VCU   | employee |
-|          | required | IBM ZD&T | AWS with | env      | experim  |
-|          | inside   | Code as  | IBM ZD&T | ironment | entation |
-|          | the      | a        | Code as  | t        | using    |
-|          | user's   | template | a        | emplate, | company  |
-|          | z/OS     |          | template | with     | r        |
-|          | env      |          | (target  | donated  | esources |
-|          | ironment |          | Audience | REXX     |          |
-|          |          |          | is       | from a   |          |
-|          | (This is |          | Medium   | company  |          |
-|          | t        |          | to High  |          |          |
-|          | ypically |          | MF       |          |          |
-|          | TSO      |          | Exp      |          |          |
-|          | Access   |          | erience) |          |          |
-|          | which    |          |          |          |          |
-|          | require  |          |          |          |          |
-|          | more     |          |          |          |          |
-|          | Sysprog  |          |          |          |          |
-|          | support) |          |          |          |          |
-+----------+----------+----------+----------+----------+----------+
-| Medium   | Other    |          |          |          |          |
-| Plus     | Licensed |          |          |          |          |
-|          | and      |          |          |          |          |
-|          | En       |          |          |          |          |
-|          | terprise |          |          |          |          |
-|          | Tooling  |          |          |          |          |
-|          | A        |          |          |          |          |
-|          | dditions |          |          |          |          |
-|          | (CICS,   |          |          |          |          |
-|          | DB2,     |          |          |          |          |
-|          | ACF2,    |          |          |          |          |
-|          | E        |          |          |          |          |
-|          | ndeavor, |          |          |          |          |
-|          | Co       |          |          |          |          |
-|          | mpilers) |          |          |          |          |
-|          | etc.     |          |          |          |          |
-+----------+----------+----------+----------+----------+----------+
-| Complex  | Physical |          |          |          |          |
-|          | Resource |          |          |          |          |
-|          | Control  |          |          |          |          |
-|          | (i.e.,   |          |          |          |          |
-|          | Sysplex  |          |          |          |          |
-|          | Ena      |          |          |          |          |
-|          | blement) |          |          |          |          |
-+----------+----------+----------+----------+----------+----------+
+|    <br>Complexity     |    <br>Environment   Use                                                                                                                                 |    <br>Emulated zPDT/zD&T                                        |    <br>Emulated<br>   <br>zPDT/zD&T                                                                                    |    <br>Z Hardware (either Bare Metal or z/VM)                                              |    <br>Z Hardware (either Bare Metal or z/VM)                                |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+|    <br>               |    <br>                                                                                                                                                  |    <br>Donated or Shared                                         |    <br>Owned                                                                                                           |    <br>Donated or Shared                                                                   |    <br>Owned                                                                 |
+|    <br>Simple         |    <br>Shared   sysprog support required to establish the user’s z/OS environment<br>   <br>(For example   simply Unix System Services)                  |    <br>Perhaps z/OS   on AWS with IBM ZD&T Code as a template    |    <br>1 Perhaps z/OS   on AWS with IBM ZD&T Code as a template (target audience MF Novices)                           |    <br>1 Marist   College or VCU environment template, with donated REXX from a company    |    <br>Company   enables employee experimentation using company resources    |
+|    <br>Medium         |    <br>Sysprog   activities required inside the user’s z/OS environment<br>   <br>(This is   typically TSO Access which require more Sysprog support)    |    <br>Perhaps z/OS   on AWS with IBM ZD&T Code as a template    |    <br>2 Perhaps z/OS   on AWS with IBM ZD&T Code as a template (target Audience is Medium to   High MF Experience)    |    <br>2 Marist   College or VCU environment template, with donated REXX from a company    |    <br>Company   enables employee experimentation using company resources    |
+|    <br>Medium Plus    |    <br>Other   Licensed and Enterprise Tooling Additions (CICS, DB2, ACF2, Endeavor,   Compilers) etc.                                                   |    <br>                                                          |    <br>                                                                                                                |    <br>                                                                                    |    <br>                                                                      |
+|    <br>Complex        |    <br>Physical   Resource Control (i.e., Sysplex Enablement)                                                                                            |    <br>                                                          |    <br>                                                                                                                |    <br>                                                                                    |    <br>                                                                      |
 
 There are multiple areas that have a need for a work stream. The chart
 above is attempting to determine what areas are of high priority and
