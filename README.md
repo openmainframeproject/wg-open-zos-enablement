@@ -106,18 +106,23 @@ group:
     resources is controlled by owners, but does not provide management
     of environments.
 
-## Next Steps
+## Results of First Year of Effort
 
-- Contact potential code donation for internal environment allocation
-    routines as a starting point for building out Bare Metal or z/VM
-    offering
+During the first year, the working group formulated the basic focus of the group, and explored the following:
 
-- Contact owners of z/OS on AWS with IBM ZD&T to consider contribution
-    so other platforms may be supported or supplied for emulated
-    offering
+- Made contact with groups for potential code donation for internal environment allocation routines as a starting point for building out Bare Metal or z/VM offering
 
-- Broaden Sysprog involvement in project, through perhaps joint
-    sponsorship with SHARE to gain Sysprog expertise for project
+- Explored owners of z/OS and emulators to consider contribution so other platforms may be supported or supplied for emulated offering
+
+- Found that the more rare skills of Sysprog can be an impediment to the objectives of the project, as now often they shoulder the burden of new users
+
+- Established a Slack Channel Z assembler community to share expertise that cuts across existing projects (z-assembler-community at https://openmainframeproject.slack.com/archives/C030QUUN39C)
+
+No code contributions were made in the first year.
+
+The working group believes they helped impact the Open Mainframe Project's goal set in early 2022 to provide Z infrastructure for open source projects (https://www.openmainframeproject.org/blog/2022/01/05/2022-goals-for-the-open-mainframe-project)
+
+The working group is ready to assist when this infrastructure is in place to allow for efficient management and wide-spread use of the resource--the haulmarks of Z environments.
 
 ## News and Discussion
 
@@ -159,7 +164,7 @@ email <wg-public-z-cloud+help@lists.openmainframeproject.org>.
 
 See the [Open Mainframe Project public
 calendar](https://lists.openmainframeproject.org/calendar). This WG
-meets biweekly every other Thursday at 4:00 PM EST.
+meets the frist Thursday of the month at 4:00 PM EST.
 
 ## Meeting notes
 
