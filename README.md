@@ -126,6 +126,8 @@ The working group is ready to assist when this infrastructure is in place to all
 
 ## News and Discussion
 
+On Feburary 10, 2022, the Open Mainframe Project's Technial Advisor Committee (TAC) approved the continuation of the working group for another year.
+
 You can connect with the community in a variety of ways\...
 
 - [Public z
