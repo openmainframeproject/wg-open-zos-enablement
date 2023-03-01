@@ -1,3 +1,5 @@
+NOTICE: This working group is in Emeritus status and no longer maintained
+
 **Open z/OS Enablement, OzE**
 
 **Vision:**
